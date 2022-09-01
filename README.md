@@ -13,7 +13,7 @@ Audit cloud MDM Device Assignments and Agent Status
 ## SaaS Option
 If you would like to have this as a SaaS product vs a set of scripts, create an issue so the need can be scoped.
 
-## Current Integrations (create an issue on the repo to request new integrations)
+## Current Integrations (create issue to request new integrations)
 IDP
 - Okta
 
