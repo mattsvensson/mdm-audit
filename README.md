@@ -10,6 +10,9 @@ Audit cloud MDM Device Assignments and Agent Status
 - Are there potential MDM agent issues? (e.g. agent has stopped checking in)
 - Are any devices active in Azure AD but not in MDM?
 
+## SaaS Option
+If you would like to have this as a SaaS product vs a set of scripts, create an issue so the need can be scoped.
+
 ## Current Integrations (create an issue on the repo to request new integrations)
 IDP
 - Okta
