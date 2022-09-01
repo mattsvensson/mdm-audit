@@ -30,23 +30,21 @@ MDM
 The below can all be used at the same time, if desired.
 
 ### Caching IDP data
-    ```python3 main.py --idp=okta```
+    python3 main.py --idp=okta
 
 ### Caching MDM data example
 All MDMs must be cached at the same time
-    ```python3 main.py --mdm=jamf,azure```
+    python3 main.py --mdm=jamf,azure
 
 ### Running checks
-    ```python3 main.py --run_checks```
+    python3 main.py --run_checks
 
 ## Example Output
 
-    ```
     [*] Jamf device with no email set: {DEVICE_NAME}
     [*] Jamf agent may be broken: {DEVICE_NAME}
     [*] Azure device is registered but not in MDM {DEVICE_NAME} - {MANUFACTURER} - {MODEL} - {OPERATING_SYSTEM}
     [*] Deprovisioned user with active device {DEVICE_NAME} - User deprovisioned: {USER_STATUS_CHANGE_DATE} - Device last Active: {LAST_CONTACT_TIME}
-    ```
 
 ## Customization
 
@@ -61,7 +59,6 @@ The lib/constants.py file has a couple of things that you can customize.  The cu
 
 1. Thou shalt use the below IDP normalization format
 
-    ```
     {
         "email": {STRING},
         "status": {STRING},
@@ -69,11 +66,9 @@ The lib/constants.py file has a couple of things that you can customize.  The cu
         "status_changed": {STRING},
         "user_type": {STRING}
     }
-    ```
 
 2. Thou shalt use the below MDM normalization format
 
-    ```
     {
         "source": {STRING},
         "mdm": {STRING},
@@ -85,6 +80,7 @@ The lib/constants.py file has a couple of things that you can customize.  The cu
         "last_report_date": {STRING},
         "email": {STRING},
     }
-    ```
 
-3. Thou shalt use the following time format:  2022-09-01T15:04:12Z
+3. Thou shalt use the following time format:  
+
+    2022-09-01T15:04:12Z
