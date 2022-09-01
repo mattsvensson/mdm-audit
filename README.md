@@ -63,7 +63,9 @@ The lib/constants.py file has a couple of things that you can customize.  The cu
 
 ## mdm-audit commandments for new integrations
 
-1. Thou shalt use the below IDP normalization format
+1. Thou shalt only have 1 IDP as your user source of truth.
+
+2. Thou shalt use the below IDP normalization format.
 
     ```
     {
@@ -75,7 +77,7 @@ The lib/constants.py file has a couple of things that you can customize.  The cu
     }
     ```
 
-2. Thou shalt use the below MDM normalization format
+3. Thou shalt use the below MDM normalization format
 
     ```
     {
@@ -91,6 +93,6 @@ The lib/constants.py file has a couple of things that you can customize.  The cu
     }
     ```
 
-3. Thou shalt use the following time format:  
+4. Thou shalt use the following time format:  
 
     ```2022-09-01T15:04:12Z```
