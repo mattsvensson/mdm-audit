@@ -6,6 +6,8 @@ from datetime import datetime
 
 
 def run_checks():
+    logger.log.critical(f"Running checks")
+
     with open(USERS_FILE, "r") as users_file:
         users = json.loads(users_file.read())
         with open(DEVICES_FILE, "r") as devices_file:
@@ -102,7 +104,7 @@ def check_for_deprovisioned_user_with_active_device(users, devices):
                     seconds_since_checkin = (datetime.utcnow() - datetime.strptime(device['last_contact_time'], '%Y-%m-%dT%H:%M:%SZ')).total_seconds()
                     # Recently active device
                     if seconds_since_checkin < SECONDS_BETWEEN_DEPROVISION_AND_ACTIVE_DEVICE:
-                        users_with_active_devices[device['email']] = f'''User deprovisioned on {user['status_changed']} but active on {device['computer_name']} - Device last Active: {device['last_contact_time']}'''
+                        users_with_active_devices[device['email']] = f'''{device['computer_name']} - User deprovisioned: {user['status_changed']} - Device last Active: {device['last_contact_time']}'''
 
 
     for user in users:

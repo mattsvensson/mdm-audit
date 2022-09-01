@@ -13,10 +13,8 @@ def run_audit():
         cache_users_from_idp()
     if args.mdm:
         cache_devices_from_mdm()
-
-    # Run checks
-    logger.log.critical(f"Running checks")
-    run_checks()
+    if args.run_checks:
+        run_checks()
 
 
 def cache_users_from_idp():

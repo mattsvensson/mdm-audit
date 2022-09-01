@@ -11,6 +11,7 @@ parser = argparse.ArgumentParser(description='''''')
 ###############################################
 parser.add_argument('--idp', default='', help='IDP data to import (e.g. Okta)')
 parser.add_argument('--mdm', default='', help='MDMs data to import (e.g. jamf,azure)')
+parser.add_argument('--run_checks', action='store_true', help='Just run the checks')
 
 ###############################################
 ## Debug Options
