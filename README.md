@@ -34,7 +34,10 @@ The below can all be used at the same time, if desired.
 
 ### Caching MDM data example
 All MDMs must be cached at the same time
+
+    ```
     python3 main.py --mdm=jamf,azure
+    ```
 
 ### Running checks
     python3 main.py --run_checks
