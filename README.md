@@ -44,6 +44,7 @@ All MDMs must be cached at the same time
 
 ## Example Output
 
+    [*] No Device Assigned to {EMAIL}
     [*] Jamf device with no email set: {DEVICE_NAME}
     [*] Jamf agent may be broken: {DEVICE_NAME}
     [*] Azure device is registered but not in MDM {DEVICE_NAME} - {MANUFACTURER} - {MODEL} - {OPERATING_SYSTEM}
@@ -53,9 +54,11 @@ All MDMs must be cached at the same time
 
 The lib/constants.py file has a couple of things that you can customize.  The current settings are a resonable balance.
 
-1. SECONDS_SINCE_CHECKIN_TO_BE_ACTIVE: How recently a device has to have checked in to be seen as "active"
+1. USER_TYPES_TO_ANALYZE: IDP user types to analyze, e.g. "Full Time"
 
-2. SECONDS_BETWEEN_DEPROVISION_AND_ACTIVE_DEVICE: How long between a user being deprovisioned and their device still being active to be suspicious.  e.g. The employee has been gone for over 2 weeks but their device has been active within the last 2 weeks.
+2. SECONDS_SINCE_CHECKIN_TO_BE_ACTIVE: How recently a device has to have checked in to be seen as "active"
+
+3. SECONDS_BETWEEN_DEPROVISION_AND_ACTIVE_DEVICE: How long between a user being deprovisioned and their device still being active to be suspicious.  e.g. The employee has been gone for over 2 weeks but their device has been active within the last 2 weeks.
 
 
 ## mdm-audit commandments for new integrations
