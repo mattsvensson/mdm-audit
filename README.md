@@ -1,7 +1,7 @@
 # MDM Audit
 
 ## Purpose
-Audit of Cloud MDM Device Assignments and Agent Status
+Audit cloud MDM Device Assignments and Agent Status
 
 ## Answers it will provide
 - Do all active users have an active device?
