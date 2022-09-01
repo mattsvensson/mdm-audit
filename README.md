@@ -25,7 +25,7 @@ MDM
 ## Execution
 
 ### Install requirements
-    ```pip3 install -r requirements.txt```
+    pip3 install -r requirements.txt
 
 The below can all be used at the same time, if desired.
 
