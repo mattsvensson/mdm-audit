@@ -59,6 +59,7 @@ The lib/constants.py file has a couple of things that you can customize.  The cu
 
 1. Thou shalt use the below IDP normalization format
 
+    ```
     {
         "email": {STRING},
         "status": {STRING},
@@ -66,9 +67,11 @@ The lib/constants.py file has a couple of things that you can customize.  The cu
         "status_changed": {STRING},
         "user_type": {STRING}
     }
+    ```
 
 2. Thou shalt use the below MDM normalization format
 
+    ```
     {
         "source": {STRING},
         "mdm": {STRING},
@@ -80,7 +83,8 @@ The lib/constants.py file has a couple of things that you can customize.  The cu
         "last_report_date": {STRING},
         "email": {STRING},
     }
+    ```
 
 3. Thou shalt use the following time format:  
 
-    2022-09-01T15:04:12Z
+    ```2022-09-01T15:04:12Z```
