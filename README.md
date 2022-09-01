@@ -20,7 +20,7 @@ MDM
 
 ## Requirements
 - Python3
-- Python3 PIP
+- Python3 pip
 
 ## Execution
 
