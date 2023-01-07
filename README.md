@@ -1,4 +1,6 @@
-# MDM Audit
+# MDM Audit (DEPRECATED)
+
+# MOVED TO https://github.com/Ucnt/mdm-audit
 
 ## Purpose
 Audit cloud MDM Device Assignments and Agent Status
